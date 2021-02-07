@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dcb</artifactId>
+        <groupId>ru.denisfv.fullapi.spring.ability.dcb</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.denisfv.fullapi.spring.ability.dcb.aspectmap</groupId>
+    <artifactId>aspect-and-map</artifactId>
+    <name>Spring.Ability.Dynamic create bean: Aspect and Map</name>
+    <description>Динамическое создание бинов через аспекты и мапу</description>
+
+    <properties>
+        <org.springframework.boot>2.4.0</org.springframework.boot>
+        <junit>4.13</junit>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>${org.springframework.boot}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${org.springframework.boot}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit}</version>
+        </dependency>
+    </dependencies>
+
+</project>

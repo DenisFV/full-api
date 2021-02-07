@@ -1,0 +1,52 @@
+info.app:
+  name: rsocket-server
+  description: rsocket-server
+  version: 1.0.0
+
+server:
+  port: 8080
+  address: localhost
+
+spring:
+  application.name: rsocket-server
+  output.ansi.enabled: ALWAYS
+
+  rsocket:
+    server:
+      port: 7000
+      mapping-path: /rsocket
+      transport: tcp
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/test?currentSchema=public
+    username: postgres
+    password: root
+
+  flyway:
+    url: jdbc:postgresql://localhost:5432/test?currentSchema=public
+    user: postgres
+    password: root
+
+  redis:
+    port: 6379
+    host: localhost
+
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: none
+    generate-ddl: false
+    open-in-view: true
+
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.springfraemwork.data.r2dbc: INFO
+    com.memorynotfound: INFO
+    io.rsocket: DEBUG
+
+  pattern:
+    console: "%style{${info.app.name}}{yellow}%style{[${hostName}]}{magenta} %style{%d{yyyy-MM-dd}}{blue} %d{HH:mm:ss.SSS} %highlight{${LOG_LEVEL_PATTERN:-%5p}} %style{%c{1.}}{cyan} - %msg%n"

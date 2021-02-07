@@ -1,0 +1,28 @@
+info.app:
+  name: rsocket-client
+  description: rsocket-client
+  version: 1.0.0
+
+server:
+  port: 8081
+  rsocket.port: 7000
+  address: localhost
+
+spring:
+  application.name: rsocket-client
+  output.ansi.enabled: ALWAYS
+
+  devtools:
+    livereload:
+      port: 35730
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.springfraemwork.data.r2dbc: INFO
+    com.memorynotfound: INFO
+    io.rsocket: DEBUG
+
+  pattern:
+    console: "%style{${info.app.name}}{yellow}%style{[${hostName}]}{magenta} %style{%d{yyyy-MM-dd}}{blue} %d{HH:mm:ss.SSS} %highlight{${LOG_LEVEL_PATTERN:-%5p}} %style{%c{1.}}{cyan} - %msg%n"

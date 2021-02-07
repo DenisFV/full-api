@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ability</artifactId>
+        <groupId>ru.denisfv.fullapi.spring.ability</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.denisfv.fullapi.spring.ability.upis</groupId>
+    <artifactId>update-prototype-in-singleton</artifactId>
+    <name>Spring.Ability: Update prototype in singleton</name>
+    <description>Обновление прототайпов в синглтоне</description>
+
+    <properties>
+        <org.springframework>5.2.8.RELEASE</org.springframework>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${org.springframework}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${org.springframework}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework}</version>
+        </dependency>
+    </dependencies>
+
+</project>

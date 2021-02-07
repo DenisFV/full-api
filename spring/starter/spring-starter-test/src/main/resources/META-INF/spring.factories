@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration = ru.denisfv.fullapi.spring.starter.sse.StarterConfig

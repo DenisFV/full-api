@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>spring</artifactId>
+        <groupId>ru.denisfv.fullapi.spring</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>ru.denisfv.fullapi.spring.ability</groupId>
+    <artifactId>ability</artifactId>
+    <packaging>pom</packaging>
+    <name>Spring.Ability</name>
+    <description>Основные возможности спринга</description>
+
+    <modules>
+        <module>update-prototype-in-singleton</module>
+        <module>custom-scope</module>
+        <module>dynamic-create-bean</module>
+    </modules>
+
+</project>
